@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags must come first in the head; any other head content must come after these tags -->
-    <meta name="description" content="Multiple Choice Questions - iDiv Health & Security Instructions">
-    <meta name="author" content="Christian Langer">
+    <meta name="description" content="AYCHKnow - A simple and multiple choice questions">
+    <meta name="author" content="Jean Wallet">
     <link rel="icon" href="">
 
-    <title>iDiv Health &amp; Security Instructions</title>
+    <title>AYCHKnow &amp; an Introduction to AYCH inc</title>
     <link type="text/css" rel="stylesheet" href="./css/bootstrap.min.css">    
     
     <link type="text/css" rel="stylesheet" href="./css/animate.css">
@@ -228,11 +228,11 @@ function showAnswer() {
 
     // show number of correct answers out of total
     if (numCorrect === quizLength) {
-    resultsContainer.innerHTML = `<div class="wow slideInDown"><h2>Congratulations!</h2></div><div class="wow fadeIn" data-wow-delay="1s" data-wow-duration="2s"><p>Very good, you seem to be a pro!</p><p>You answered ${numCorrect} out of ${myQuestions.length} questions correct.</p><a href="http://geobon.org"><button class="btn btn-default">My Dashboard</button></a></div>`;
+    resultsContainer.innerHTML = `<div class="wow slideInDown"><h2>Congratulations!</h2></div><div class="wow fadeIn" data-wow-delay="1s" data-wow-duration="2s"><p>Very good, you seem to be a pro!</p><p>You answered ${numCorrect} out of ${myQuestions.length} questions correct.</p><a href="https://aychknow.github.io"><button class="btn btn-default">My Dashboard</button></a></div>`;
     } else if (numCorrect >= quizHalf && numCorrect < quizLength ) {
       resultsContainer.innerHTML = `<div class="wow slideInDown"><h2>Not bad...</h2></div><div class="wow fadeIn" data-wow-delay="1s" data-wow-duration="2s"><p>but not enough to be a winner.</p><p>You answered just ${numCorrect} out of ${myQuestions.length} questions correct.</p><a href="./index.html"><button id="playAgain" class="btn btn-default">Play again</button></a></div>`;
     } else {
-      resultsContainer.innerHTML = `<div class="wow slideInDown"><h2>Very bad...</h2></div><div class="wow fadeIn" data-wow-delay="1s" data-wow-duration="2s"><p>You need to practice! All employees need to be familiar with the iDiv Health & Security rules.</p><p>You answered just ${numCorrect} out of ${myQuestions.length} questions correct.</p><a href="./index.html"><button id="playAgain" class="btn btn-default">Play again</button></a></div>`;
+      resultsContainer.innerHTML = `<div class="wow slideInDown"><h2>Very bad...</h2></div><div class="wow fadeIn" data-wow-delay="1s" data-wow-duration="2s"><p>You need to practice! All users may get familiar with the AYCHKnow & the Questions.</p><p>You answered just ${numCorrect} out of ${myQuestions.length} questions correct.</p><a href="./index.html"><button id="playAgain" class="btn btn-default">Play again</button></a></div>`;
     }
     
     // switch off Title, Question and Answers
