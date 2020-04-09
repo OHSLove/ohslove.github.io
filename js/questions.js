@@ -1,67 +1,67 @@
 const myQuestions = [
   {
-    title: "Question 1 - Unusual Working Hours",
-    question: "If you plan to work on weekends or public holidays, a prior written authorization by your supervisor is required and the BIOCON coordinator should be notified...<p>Select your answer then Confirm.</p>",
+    title: "Question 1 - Days of the week",
+    question: "What is the day before Sunday?<p>Select your answer then Confirm.</p>",
     background: "<img src='./img/bg_slide1.jpg'>",
     answers: {
-      a: "when you arrive and leave iDiv.",
-      b: "when you arrive at iDiv.",
-      c: "only in case of emergency."
+      a: "Monday.",
+      b: "Saturday.",
+      c: "None of the above."
     },
-    correctAnswer: "a",
-    correctAnswerText: "That is correct.<p>For safety reasons, the BIOCON coordinator should be notified when you arrive and leave iDiv on weekends or public holidays.</p>",
-    falseAnswerText: "That's not correct.<p>The BIOCON coordinator should be informed in any case!</p>"
+    correctAnswer: "b",
+    correctAnswerText: "That is correct.<p>Saturday, Sunday, Monday, etc.</p>",
+    falseAnswerText: "That's not correct.<p>Monday is after Sunday, not before Sunday!</p>"
   },
   {
-    title: "Question 2 - Major Accidents",
-    question: "In the event of a serious accident which requires a doctor you must submit an accident report to your university and a copy to the iDiv H&S coordinator. Accident reports must be filled in German. How many days after the accident you must submit the report?<p>Select your answer then Confirm.</p>",
+    title: "Question 2 - Fruit",
+    question: "What kind of a fruit that half of it is made of a 'star' and another half is made of a 'fruit'?<p>Select your answer then Confirm.</p>",
     background: "<img src='./img/bg_slide2.jpg'>",
     answers: {
-      a: "Submit within 2 days of the accident",
-      b: "Submit within 3 days of the accident",
-      c: "Submit within 5 days of the accident"
-    },
-    correctAnswer: "b",
-    correctAnswerText: "That is correct.<p>Submit accident report to MLU within 3 days of the accident – send a copy to iDiv H&S coordinator (forms can be downloaded from the intranet).</p>",
-    falseAnswerText: "That is wrong.<p>Submit this form within 3 days of the accident!</p>"
-  },
-  {
-    title: "Question 3 - Outside the office",
-    question: "You are planning a field trip to Peneda Geres? Remember: A business trip form has to be submitted.<p>It's lunchtime, you are planning to go to the HIT market to catch some food. Are you health insured inside HIT?</p><p>Select your answer then Confirm.</p>",
-    background: "<img src='./img/bg_slide3.jpg'>",
-    answers: {
-      a: "Yes, I'm full covered for sure.",
-      b: "No coverage through employer‘s health insurance.",
-      c: "No, the way to HIT is not covered but inside HIT for sure!"
-    },
-    correctAnswer: "b",
-    correctAnswerText: "That is correct.<p>No coverage through employer‘s health/liability insurance at HIT or cafeteria. The way to HIT is covered, but not inside HIT!</p>",
-    falseAnswerText: "That´s wrong!<p>You are not health insured inside HIT, only the way to the supermarket is covered by your health insurance.</p>"
-  },
-  {
-    title: "Question 4 - Assembly point",
-    question: "Do you know our assembly point of Interim II?<p>Select your answer then Confirm.</p>",
-    background: "<img src='./img/bg_slide4.gif'>",
-    answers: {
-      a: "X1",
-      b: "X2",
-      c: "X3"
-    },
-    correctAnswer: "a",
-    correctAnswerText: "That is correct.<p>Our assembly point is opposite the main entrance next to the trees.</p>",
-    falseAnswerText: "That is not correct.<p>X2 is no assembly point and X3 is the assembly point for Interim III.</p>"
-  },
-  {
-    title: "Question 5 - Fire alarm",
-    question: "Almost there...<p>In case of fire. Alarm & warn people in the building! Fire alarms are located always different per department! Do you know the location of the fire alarms in BIOCON?</p><p>Select your answer then Confirm.</p>",
-    background: "<img src='./img/bg_slide5.jpg'>",
-    answers: {
-      a: "Main entrance door",
-      b: "Next to Resilience room",
-      c: "Opposite of woman restroom"
+      a: "Grapefruit",
+      b: "Cherry",
+      c: "Star-fruit"
     },
     correctAnswer: "c",
-    correctAnswerText: "That is correct.<p>The fire alarm is located opposite of woman restroom. Call fire service - 112! Focus on main questions: WHO is calling? WHAT happened? WHERE did it happen? HOW many are injured? WAIT for questions!</p>",
-    falseAnswerText: "That is not correct.<p>Check the floor before you try again.</p>"
+    correctAnswerText: "That is correct.<p>Star-fruit is a kind of fruit that looks like a star in the shape. The star-fruit tastes either sour or sweet based on its variety.</p>",
+    falseAnswerText: "That is wrong.<p>Star-fruit!</p>"
+  },
+  {
+    title: "Question 3 - Roles",
+    question: "How do you call a person who owns his/her book?</p><p>Select your answer then Confirm.</p>",
+    background: "<img src='./img/bg_slide3.jpg'>",
+    answers: {
+      a: "A Writer.",
+      b: "An Author.",
+      c: "A Journalist!"
+    },
+    correctAnswer: "b",
+    correctAnswerText: "That is correct.<p>The person who owns his/her book is called as an Author!</p>",
+    falseAnswerText: "That´s wrong!<p>A Writer who writes a story, a topic, a white pages, etc. A Journalist is the person who writes for the newspaper, news topics, etc.</p>"
+  },
+  {
+    title: "Question 4 - Gifts",
+    question: "How do you call a gift in another word?<p>Select your answer then Confirm.</p>",
+    background: "<img src='./img/bg_slide4.gif'>",
+    answers: {
+      a: "Some time",
+      b: "A present ",
+      c: "A hand"
+    },
+    correctAnswer: "b",
+    correctAnswerText: "That is correct.<p>A present is used as other name of a gift.</p>",
+    falseAnswerText: "That is not correct.<p>Some time can be used as other word of present (like present moment). A hand is for human body description.</p>"
+  },
+  {
+    title: "Question 5 - Insects",
+    question: "You have passed some questions. Go ahead...<p>Butter is used with bread for our food. When you add a verb 'fly's as a suffix to butter, it is a name of an insect. What is it?</p><p>Select your answer then Confirm.</p>",
+    background: "<img src='./img/bg_slide5.jpg'>",
+    answers: {
+      a: "Bird",
+      b: "Spider",
+      c: "Butter-fly"
+    },
+    correctAnswer: "c",
+    correctAnswerText: "That is correct.<p>Yes. An insect named butter-fly can fly around us.</p>",
+    falseAnswerText: "That is not correct.<p>A bird can fly around us, too. However, butter-fly is the whole word for its kind of insect name.</p>"
   }
 ];
