@@ -1,6 +1,8 @@
 /*! WOW wow.js - v1.3.0 - 2016-10-04
  * https://wowjs.uk
- * Copyright (c) 2016 Thomas Grainger; Licensed MIT */
+ * Copyright (c) 2015 - 2020 Jean Wallet
+ * Licensed under the [AGPL-3.0+](https://www.gnu.org/licenses/)
+ */
 ! function(a, b) { if ("function" == typeof define && define.amd) define(["module", "exports"], b);
     else if ("undefined" != typeof exports) b(module, exports);
     else { var c = { exports: {} };
@@ -51,14 +53,4 @@
                         d = a.getAttribute("data-wow-duration"),
                         e = a.getAttribute("data-wow-delay"),
                         f = a.getAttribute("data-wow-iteration"); return this.animate(function() { return c.customStyle(a, b, d, e, f) }) } }, { key: "resetStyle", value: function() { for (var a = 0; a < this.boxes.length; a++) { var b = this.boxes[a];
-                        b.style.visibility = "visible" } } }, { key: "resetAnimation", value: function(a) { if (a.type.toLowerCase().indexOf("animationend") >= 0) { var b = a.target || a.srcElement;
-                        b.className = b.className.replace(this.config.animateClass, "").trim() } } }, { key: "customStyle", value: function(a, b, c, d, e) { return b && this.cacheAnimationName(a), a.style.visibility = b ? "hidden" : "visible", c && this.vendorSet(a.style, { animationDuration: c }), d && this.vendorSet(a.style, { animationDelay: d }), e && this.vendorSet(a.style, { animationIterationCount: e }), this.vendorSet(a.style, { animationName: b ? "none" : this.cachedAnimationName(a) }), a } }, { key: "vendorSet", value: function(a, b) { for (var c in b)
-                        if (b.hasOwnProperty(c)) { var d = b[c];
-                            a["" + c] = d; for (var e = 0; e < this.vendors.length; e++) { var f = this.vendors[e];
-                                a["" + f + c.charAt(0).toUpperCase() + c.substr(1)] = d } } } }, { key: "vendorCSS", value: function(a, b) { for (var c = q(a), d = c.getPropertyCSSValue(b), e = 0; e < this.vendors.length; e++) { var f = this.vendors[e];
-                        d = d || c.getPropertyCSSValue("-" + f + "-" + b) } return d } }, { key: "animationName", value: function(a) { var b = void 0; try { b = this.vendorCSS(a, "animation-name").cssText } catch (c) { b = q(a).getPropertyValue("animation-name") } return "none" === b ? "" : b } }, { key: "cacheAnimationName", value: function(a) { return this.animationNameCache.set(a, this.animationName(a)) } }, { key: "cachedAnimationName", value: function(a) { return this.animationNameCache.get(a) } }, { key: "scrollHandler", value: function() { this.scrolled = !0 } }, { key: "scrollCallback", value: function() { if (this.scrolled) { this.scrolled = !1; for (var a = [], b = 0; b < this.boxes.length; b++) { var c = this.boxes[b]; if (c) { if (this.isVisible(c)) { this.show(c); continue } a.push(c) } } this.boxes = a, this.boxes.length || this.config.live || this.stop() } } }, { key: "offsetTop", value: function(a) { for (; void 0 === a.offsetTop;) a = a.parentNode; for (var b = a.offsetTop; a.offsetParent;) a = a.offsetParent, b += a.offsetTop; return b } }, { key: "isVisible", value: function(a) { var b = a.getAttribute("data-wow-offset") || this.config.offset,
-                        c = this.config.scrollContainer && this.config.scrollContainer.scrollTop || window.pageYOffset,
-                        d = c + Math.min(this.element.clientHeight, k()) - b,
-                        e = this.offsetTop(a),
-                        f = e + a.clientHeight; return d >= e && f >= c } }, { key: "disabled", value: function() { return !this.config.mobile && f(navigator.userAgent) } }]), a }();
-    b["default"] = r, a.exports = b["default"] });
+                        b.style.visibility = "visible" } } }, { key: "resetAnimation", value: function(a) { if (a.
